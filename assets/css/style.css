@@ -108,6 +108,16 @@
     padding-bottom: 30px;
 }
 
+@media screen and (max-width: 480px) {
+    .hero_text h1 {
+        font-size: 65px;
+    }
+
+    .hero_text p {
+        font-size: 35px;
+    }
+}
+
 /* hero */
 
 .hero {
@@ -154,7 +164,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     padding-top: 160px;
 }
 
@@ -162,7 +171,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     padding-top: 160px;
 }
 
@@ -207,10 +215,35 @@
     color: #A8A8A8;
 }
 
-.feature_content img,
-.rev_feature img {
+.feature_content img {
     width: 100%;
     height: 100%;
+}
+
+.rev_feature_content img {
+    width: 100%;
+
+}
+
+@media screen and (max-width:960px) {
+    .feature_content {
+        flex-direction: column-reverse;
+
+    }
+
+    .feature_text {
+        padding-right: 0;
+        padding-top: 40px;
+    }
+
+    .rev_feature_content {
+        flex-direction: column;
+    }
+
+    .rev_feature_text {
+        padding-left: 0;
+        padding-top: 40px;
+    }
 }
 
 /* about */
@@ -291,6 +324,43 @@
     color: #000000;
 }
 
+@media screen and (max-width:1310px) {
+    .about_content {
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .about_content {
+        padding-right: 10px;
+        padding-top: ;
+    }
+}
+@media screen and (max-width:675px) {
+    .about {
+        flex-direction: column;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width:1310px) {
+    .about_2_content {
+        padding-right: 100px;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .about_2_content {
+        padding-right: 10px;
+    }
+}
+@media screen and (max-width:675px) {
+    .about_2 {
+        flex-direction: column;
+        padding-right: 0;
+    }
+}
+
 /* end about */
 
 /* how to use */
@@ -345,6 +415,14 @@
 .htu_img_2 {
     margin-right: 80px;
 
+}
+
+.htu_img_2 img {
+    width: 100%;
+}
+
+.htu_img img {
+    width: 100%;
 }
 
 /* Slideshow container */
@@ -442,6 +520,12 @@ q {
     display: flex;
     justify-content: center;
     margin-top: 150px;
+    max-width: 1008px;
+    margin: 0 auto;
+}
+
+.htu_img_3 img {
+    width: 100%;
 }
 
 /* end how to use */
@@ -566,6 +650,8 @@ q {
     padding-top: 40px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+
 }
 
 .contact_form input[type=submit] {
@@ -612,6 +698,7 @@ q {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer_bar li {
